@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div><label for="booking_date"></label><input type="date" name="booking_date" id="booking_date"></div>
+        <div><label for="booking_people">Number of people</label><input type="range" id="booking_people"
+                name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value">
+            <output>4</output>
+        </div>
+        <div><label for="booking_locations">Location</label><input id="booking_locations" name="locations"
+                list="locations">
+            <datalist id="locations">
+                <option value="downtown">Downtown</option>
+                <option value="arlington">Arlington</option>
+                <option value="georgetown">Georgetown</option>
+                <option value="alexandria">Alexandria</option>
+            </datalist>
+        </div>
+    </form>
+</body>
+
+</html>

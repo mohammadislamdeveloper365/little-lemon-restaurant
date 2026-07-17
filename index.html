@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <meta name="author" content="Mohammad Islam">
     <meta name="description" content="This is html and css details course">
     <title>First Webpage</title>
+    <meta name="title" content="First Meta page">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -18,10 +20,36 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Location</a></li>
             <li><a href="location.html">Blog</a></li>
+            <li><a href="book.html">Blog</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Blog</h1>
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="user_first_name">First name</label><br /><input type="text" id="user_first_name"
+                    name="user_first_name" required>
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label><br /><input type="user_last_name" id="user_last_name"
+                    name="user_last_name">
+            </div>
+            <div><label for="user_email">Email</label><br /><input type="email" id="user_email" name="user_email"
+                    required></div>
+            <div><label for="user_password">Password</label><br /><input type="password" id="user_password"
+                    name="user_password" required></div>
+            <div><label for="user_confirmation_password">Confirm password</label><br /><input type="password"
+                    id="user_confirmation_password" name="user_confirmation_password" required></div>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
         <article>
             <h2>20% off this week</h2>
             <p>Hello everyone for the discount</p>
@@ -34,6 +62,7 @@
     <footer>
         <p>Copyright Little Lemon</p>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
